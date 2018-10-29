@@ -1,0 +1,17 @@
+$ kubectl get pods - look at status field
+$ kubectl describe pod <pod-name>
+$ kubectl logs <pod-name> <container-name>
+$ kubectl get pods --all-namespaces
+$ kubectl get rs my-app-xxxxx
+# kubectl get deployment
+
+$ kubectl get svc
+$ kubectl get endpoints
+
+
+$ kubectl exec -ti <pod-name> nslookup SERVICE-NAME
+
+$ kubectl log service/myservicename -f
+
+
+
