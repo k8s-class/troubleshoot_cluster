@@ -18,6 +18,9 @@
 # Where to search for answers.
 
 ```
+
+If running in Azure on AKS - https://docs.microsoft.com/en-us/azure/aks/view-master-logs
+
 SSH into master and worker nodes to look at logs. Use journalctl -u kubelet
 
 ### Master
