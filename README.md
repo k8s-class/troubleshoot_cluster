@@ -21,6 +21,7 @@
 # Common Issues
 
    - Pods in Pending, CrashLoopBackOff or Waiting state
+      - If kubectl get pods shows that your pod status is Pending or CrashLoopBackOff, this means that the pod could not be scheduled on a node. Typically, this is because of insufficient CPU or memory resources. It could also arise due to the absence of a network overlay or a volume provider. 
    - PVCs in Pending state
    - DNS lookup failures for exposed services
    - Non-responsive pods or containers
