@@ -1,8 +1,23 @@
 # Troubleshooting Kubernetes Clusters.
 
-  - commands to run
-  - Where to search for answers
-  - How to improve on the base install
+
+
+   - Is the manifest correct? Check with the Kubernetes JSON schema.
+
+   - Does the container run standalone, locally (that is, outside of Kubernetes)?
+
+   - Can Kubernetes reach the container registry and actually pull the container image?
+
+   - Can the nodes talk to each other?
+
+   - Can the nodes reach the master?
+
+   - Is DNS available in the cluster?
+
+   - Are there sufficient resources available on the nodes?
+
+   - Did you restrict the container’s resource usage?
+
 
 # Commands to run to gather information.
 
