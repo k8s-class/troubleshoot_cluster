@@ -32,6 +32,7 @@
   - kubectl get endpoints ${SERVICE_NAME}
   - kubectl log svc/svcname -f
   - kubectl run -i -t busybox --image=radial/busyboxplus:curl --restart=Never -- sh
+  - kubectl cluster-info dump
  
 # Where to search for answers.
 
