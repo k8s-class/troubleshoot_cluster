@@ -26,6 +26,7 @@
    - PVCs in Pending state
       - If kubectl get pvc shows that your PVC status is Pending the pod is unable to start because the cluster is unable to fulfil the request for a persistent volume and attach it to the container.
    - DNS lookup failures for exposed services
+      - This usually occurs when the service has not been properly registered. The service may be using a different namespace or may simply not be available. Try using nslookup inside busybox on your servicename
    - Non-responsive pods or containers
    - Authentication failures
    - Difficulties in finding the external IP address of a node
