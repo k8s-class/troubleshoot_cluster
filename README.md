@@ -7,6 +7,8 @@
 # Commands to run to gather information.
 
   - kubectl describe pods ${POD_NAME}
+  - kubectl describe service ${SERVICE_NAME}
+  - kubectl describe deployment ${DEPLOYMENT_NAME}
   - kubectl logs ${POD_NAME} ${CONTAINER_NAME}
   - kubectl logs --previous ${POD_NAME} ${CONTAINER_NAME}
   - kubectl exec ${POD_NAME} -c ${CONTAINER_NAME} -- ${CMD} ${ARG1} ${ARG2} ... ${ARGN}
