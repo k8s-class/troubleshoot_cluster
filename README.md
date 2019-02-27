@@ -28,6 +28,7 @@
    - DNS lookup failures for exposed services
       - This usually occurs when the service has not been properly registered. The service may be using a different namespace or may simply not be available. Try using nslookup inside busybox on your servicename
    - Non-responsive pods or containers
+      - If your pod is running but appears to be non-responsive, it could be due to a failed process in the container - for example, because of an invalid configuration or insufficient storage space. To check this, you can log into the running container and check that the required processes are running.
    - Authentication failures
    - Difficulties in finding the external IP address of a node
 
