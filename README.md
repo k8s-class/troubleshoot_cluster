@@ -18,6 +18,15 @@
 
    - Did you restrict the container’s resource usage?
 
+# Common Issues
+
+   - Pods in Pending, CrashLoopBackOff or Waiting state
+   - PVCs in Pending state
+   - DNS lookup failures for exposed services
+   - Non-responsive pods or containers
+   - Authentication failures
+   - Difficulties in finding the external IP address of a node
+
 
 # Commands to run to gather information.
 
