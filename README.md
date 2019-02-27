@@ -24,6 +24,7 @@
       - If kubectl get pods shows that your pod status is Pending or CrashLoopBackOff, this means that the pod could not be scheduled on a node. Typically, this is because of insufficient CPU or memory resources. It could also arise due to the absence of a network overlay or a volume provider. 
       - If kubectl get pods shows that your pod status is ImagePullBackOff or ErrImagePull, this means that the pod could not run because it could not pull the image.
    - PVCs in Pending state
+      - If kubectl get pvc shows that your PVC status is Pending the pod is unable to start because the cluster is unable to fulfil the request for a persistent volume and attach it to the container.
    - DNS lookup failures for exposed services
    - Non-responsive pods or containers
    - Authentication failures
